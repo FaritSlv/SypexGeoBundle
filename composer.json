@@ -27,12 +27,12 @@
         "php": "^7.2",
         "ext-zip": "*",
         "guzzlehttp/guzzle": "^6.0",
-        "symfony/framework-bundle": "^3.4|^4.2",
+        "symfony/framework-bundle": "^3.4|^4.2|^5.1",
         "yamilovs/sypex-geo": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.3",
-        "symfony/console": "^3.4|^4.2"
+        "symfony/console": "^3.4|^4.2|^5.1"
     },
     "config": {
         "sort-packages": true
