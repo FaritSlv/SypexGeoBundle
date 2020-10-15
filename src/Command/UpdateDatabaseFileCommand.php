@@ -70,12 +70,12 @@ class UpdateDatabaseFileCommand extends Command
             $client->request(Request::METHOD_GET, static::DATABASE_FILE_LINK, $settings);
         } catch (GuzzleException $e) {
             $io->error(sprintf('%d: %s', $e->getCode(), $e->getMessage()));
-            return;
+            return Command::FAILURE;
         }
 
         if (true !== $zip->open($tmpFilePath)) {
             $io->error('Can\'t open database archive');
-            return;
+            return Command::FAILURE;
         }
 
         $databaseFile = $zip->getFromName(static::DATABASE_FILE_NAME);
