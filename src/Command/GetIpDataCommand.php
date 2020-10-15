@@ -37,7 +37,7 @@ class GetIpDataCommand extends Command
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): void
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
         $ip = $input->getArgument('ip');
@@ -65,6 +65,8 @@ class GetIpDataCommand extends Command
         }
 
         $io->table([], $rows);
+
+        return Command::SUCCESS;
     }
 
     private function parseData(object $class): array

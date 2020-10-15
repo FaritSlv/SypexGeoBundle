@@ -49,7 +49,7 @@ class UpdateDatabaseFileCommand extends Command
             ->setDescription('Download and extract new database file to database path');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): void
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
         $zip = new \ZipArchive();
@@ -85,6 +85,8 @@ class UpdateDatabaseFileCommand extends Command
         $zip->close();
 
         $io->success(sprintf('New database file was saved to "%s"', realpath($this->databasePath)));
+
+        return Command::SUCCESS;
     }
 
     private function addProxySettings(array $settings, SymfonyStyle $io): array
