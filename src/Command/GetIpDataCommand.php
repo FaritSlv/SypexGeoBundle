@@ -66,7 +66,7 @@ class GetIpDataCommand extends Command
 
         $io->table([], $rows);
 
-        return Command::SUCCESS;
+        return 0;
     }
 
     private function parseData(object $class): array

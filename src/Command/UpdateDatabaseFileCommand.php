@@ -70,12 +70,12 @@ class UpdateDatabaseFileCommand extends Command
             $client->request(Request::METHOD_GET, static::DATABASE_FILE_LINK, $settings);
         } catch (GuzzleException $e) {
             $io->error(sprintf('%d: %s', $e->getCode(), $e->getMessage()));
-            return Command::FAILURE;
+            return 1;
         }
 
         if (true !== $zip->open($tmpFilePath)) {
             $io->error('Can\'t open database archive');
-            return Command::FAILURE;
+            return 1;
         }
 
         $databaseFile = $zip->getFromName(static::DATABASE_FILE_NAME);
@@ -86,7 +86,7 @@ class UpdateDatabaseFileCommand extends Command
 
         $io->success(sprintf('New database file was saved to "%s"', realpath($this->databasePath)));
 
-        return Command::SUCCESS;
+        return 0;
     }
 
     private function addProxySettings(array $settings, SymfonyStyle $io): array
