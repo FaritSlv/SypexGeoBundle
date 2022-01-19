@@ -1,5 +1,5 @@
 {
-    "name": "yamilovs/sypex-geo-bundle",
+    "name": "farit-slv/sypex-geo-bundle",
     "description": "An adaptation of SypexGeo library to Symfony Bundle system",
     "keywords": [
         "sypexgeo", "position", "ip location", "geoip"
