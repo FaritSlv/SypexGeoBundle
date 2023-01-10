@@ -11,16 +11,19 @@
         {
             "name": "Yamilov Stepan",
             "email": "yamilovs@gmail.com"
+        },
+        {
+            "name": "Farit Slv"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Yamilovs\\Bundle\\SypexGeoBundle\\": "src/"
+            "FaritSlv\\Bundle\\SypexGeoBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yamilovs\\Bundle\\SypexGeoBundle\\Tests\\": "tests/"
+            "FaritSlv\\Bundle\\SypexGeoBundle\\Tests\\": "tests/"
         }
     },
     "require": {

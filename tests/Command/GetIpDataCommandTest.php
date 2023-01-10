@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yamilovs\Bundle\SypexGeoBundle\Tests\Command;
+namespace FaritSlv\Bundle\SypexGeoBundle\Tests\Command;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Exception\RuntimeException;
 use Symfony\Component\Console\Tester\CommandTester;
-use Yamilovs\Bundle\SypexGeoBundle\Command\GetIpDataCommand;
+use FaritSlv\Bundle\SypexGeoBundle\Command\GetIpDataCommand;
 use Yamilovs\SypexGeo\City;
 use Yamilovs\SypexGeo\SypexGeo;
 

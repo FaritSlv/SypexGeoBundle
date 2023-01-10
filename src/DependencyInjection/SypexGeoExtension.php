@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yamilovs\Bundle\SypexGeoBundle\DependencyInjection;
+namespace FaritSlv\Bundle\SypexGeoBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -34,6 +34,6 @@ class SypexGeoExtension extends Extension
 
     public function getAlias(): string
     {
-        return 'yamilovs_sypex_geo';
+        return 'faritslv_sypex_geo';
     }
 }

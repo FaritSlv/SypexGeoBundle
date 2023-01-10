@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yamilovs\Bundle\SypexGeoBundle\DependencyInjection;
+namespace FaritSlv\Bundle\SypexGeoBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -12,13 +12,13 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('yamilovs_sypex_geo');
+        $treeBuilder = new TreeBuilder('faritslv_sypex_geo');
 
         if (method_exists($treeBuilder, 'getRootNode')) {
             $rootNode = $treeBuilder->getRootNode();
         } else {
             // BC layer for symfony/config 4.1 and older
-            $rootNode = $treeBuilder->root('yamilovs_sypex_geo');
+            $rootNode = $treeBuilder->root('faritslv_sypex_geo');
         }
 
         $rootNode

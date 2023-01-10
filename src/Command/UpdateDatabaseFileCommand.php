@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yamilovs\Bundle\SypexGeoBundle\Command;
+namespace FaritSlv\Bundle\SypexGeoBundle\Command;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
@@ -45,7 +45,7 @@ class UpdateDatabaseFileCommand extends Command
     protected function configure(): void
     {
         $this
-            ->setName('yamilovs:sypex-geo:update-database-file')
+            ->setName('faritslv:sypex-geo:update-database-file')
             ->setDescription('Download and extract new database file to database path');
     }
 

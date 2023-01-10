@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yamilovs\Bundle\SypexGeoBundle\Command;
+namespace FaritSlv\Bundle\SypexGeoBundle\Command;
 
 use ReflectionClass;
 use Symfony\Component\Console\Command\Command;
@@ -31,7 +31,7 @@ class GetIpDataCommand extends Command
     protected function configure(): void
     {
         $this
-            ->setName('yamilovs:sypex-geo:get-ip-data')
+            ->setName('faritslv:sypex-geo:get-ip-data')
             ->setDescription('Get all data about specific ip from database file')
             ->addArgument('ip', InputArgument::REQUIRED, 'IP address')
         ;

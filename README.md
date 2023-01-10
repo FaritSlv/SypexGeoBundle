@@ -36,14 +36,14 @@ public function registerBundles()
 ```yaml
 # app/config/config.yml
 
-yamilovs_sypex_geo:
+faritslv_sypex_geo:
     mode: FILE # FILE (default) | BATCH | MEMORY
     database_path: "%kernel.root_dir%/../var/SypexGeoDatabase/SxGeoCity.dat"
 ```
 
 If you need the proxy configuration for database update, you can add:
 ```yaml
-yamilovs_sypex_geo:
+faritslv_sypex_geo:
     ......
     connection:
         proxy:
@@ -60,7 +60,7 @@ yamilovs_sypex_geo:
 ### Step 4: Download necessary databases
 
 Download necessary databases to `database_path`. 
-- You can run `php bin/console yamilovs:sypex-geo:update-database-file`
+- You can run `php bin/console faritslv:sypex-geo:update-database-file`
 - Or download it manually from [Sypex Geo City](https://sypexgeo.net/files/SxGeoCity_utf8.zip)
 
 Usage
