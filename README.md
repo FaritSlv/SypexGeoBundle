@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/yamilovs/SypexGeoBundle.svg?branch=master)](https://travis-ci.org/yamilovs/SypexGeoBundle)
-
 SypexGeoBundle
 ==============
 
@@ -13,7 +11,7 @@ Installation
 Add SypexGeoBundle by running the command:
 
 ```bash
-$ composer require yamilovs/sypex-geo-bundle:^2.0
+$ composer require farit-slv/sypex-geo-bundle:^2.0
 ```
 
 ### Step 2: Enable the bundle
